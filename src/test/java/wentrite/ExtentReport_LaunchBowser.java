@@ -29,6 +29,7 @@ public class ExtentReport_LaunchBowser {
     public void launchBowser() {
         extent.createTest("launchBowser");
 
+
         WebDriver driver = new ChromeDriver();
         System.setProperty("webdriver.chrome.driver", "C:\\Wentrite Technologies\\chromedriver.exe");
         driver.manage().window().maximize();
@@ -37,9 +38,10 @@ public class ExtentReport_LaunchBowser {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
         String title = driver.getTitle();
         System.out.println(title);
-        System.out.println("Facebook Page OPened Successfully");
+        System.out.println("Facebook Page Opened Successfully");
 
         driver.close();
+        System.out.println("Driver Quited Successfully");
         extent.flush();
 
 
