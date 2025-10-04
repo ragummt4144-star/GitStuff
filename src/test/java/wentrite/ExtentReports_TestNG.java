@@ -16,7 +16,7 @@ public class ExtentReports_TestNG {
 
         extent = new ExtentReports();
         extent.attachReporter(spark);
-        extent.setSystemInfo("Tester", "Raghu Nandhan");
+        extent.setSystemInfo("Tester", "RaghuNandhan");
         return extent;
     }
 
